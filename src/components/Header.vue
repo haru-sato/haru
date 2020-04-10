@@ -1,15 +1,24 @@
 <template>
-  <div id ="headerSection">
-    <button @click="toggle" class="headerButton"><img src="スクリーンショット 2020-04-08 17.27.12">ドロワー開閉</button>
-    <Drawer @close="toggle" align="left" :closeable="true">
-      <div v-if="open"></div>
+  <div id="headerSection">
+    <button
+      class="headerButton"
+      @click="toggle"
+    >
+      <img src="スクリーンショット 2020-04-08 17.27.12">ドロワー開閉
+    </button>
+    <Drawer
+      align="left"
+      :closeable="true"
+      @close="toggle"
+    >
+      <div v-if="open" />
     </Drawer>
     <ul>
-       <li></li>
-       <li></li>
-      <li></li>
+      <li />
+      <li />
+      <li />
     </ul>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -34,11 +43,11 @@ export default {
 </script>
 
 <style>
-#headerSection{
-  background: #F3F3F3;
+#headerSection {
+  background: #f3f3f3;
   width: 100%;
   height: auto;
- }
+}
 
 </style>
 
