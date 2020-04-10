@@ -35,5 +35,10 @@ export default {
       width: 64px;
       height: 64px;
   }
+  div#mainSection {
+  margin-top: 60px;
+  min-height: 200px;
+  border-bottom: solid 1px #cbcbcb;
+}
 
 </style>
