@@ -6,6 +6,35 @@
     <Skill />
     <Vison />
     <Footer />
+    <ion-app>
+      <ion-menu
+        type="push"
+        content-id="content"
+      >
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <ion-item
+              button
+              href="/"
+            >
+              Home
+            </ion-item>
+            <ion-item
+              button
+              href="/about"
+            >
+              About
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      <ion-vue-router />
+    </ion-app>
   </div>
 </template>
 
@@ -31,7 +60,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
