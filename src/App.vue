@@ -6,16 +6,21 @@
     <Skill />
     <Vison />
     <Footer />
+    <Menu />
   </div>
 </template>
 
 <script>
+/*import smoothScroll from 'vue-smoothscroll'*/
+/*Vue.use(smoothScroll)*/
+
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vison from './components/Vison.vue'
 import Footer from './components/Footer.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
@@ -25,13 +30,14 @@ export default {
     About,
     Skill,
     Vison,
-    Footer
+    Footer,
+    Menu
   }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
