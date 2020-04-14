@@ -6,45 +6,21 @@
     <Skill />
     <Vison />
     <Footer />
-    <ion-app>
-      <ion-menu
-        type="push"
-        content-id="content"
-      >
-        <ion-header>
-          <ion-toolbar>
-            <ion-title>Menu</ion-title>
-          </ion-toolbar>
-        </ion-header>
-        <ion-content>
-          <ion-list>
-            <ion-item
-              button
-              href="/"
-            >
-              Home
-            </ion-item>
-            <ion-item
-              button
-              href="/about"
-            >
-              About
-            </ion-item>
-          </ion-list>
-        </ion-content>
-      </ion-menu>
-      <ion-vue-router />
-    </ion-app>
+    <Menu />
   </div>
 </template>
 
 <script>
+/*import smoothScroll from 'vue-smoothscroll'*/
+/*Vue.use(smoothScroll)*/
+
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vison from './components/Vison.vue'
 import Footer from './components/Footer.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
@@ -54,7 +30,8 @@ export default {
     About,
     Skill,
     Vison,
-    Footer
+    Footer,
+    Menu
   }
 }
 </script>

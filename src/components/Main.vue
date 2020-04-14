@@ -14,12 +14,12 @@
 </template>
 
 <script>
-export default {
+  export default {
     name : 'Main' ,
     props:{
-        msg: String
+    msg: String
     }
-}
+  }
 </script>
 
 <style scoped>
@@ -54,5 +54,4 @@ div#mainSection {
   min-height: 200px;
   border-bottom: solid 1px #cbcbcb;
 }
-
 </style>

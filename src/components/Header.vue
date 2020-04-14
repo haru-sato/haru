@@ -23,12 +23,13 @@
 </template>
 
 <script>
-export default {
+  export default {
     name : 'Header' ,
     props:{
-        msg: String
+    msg: String
     }
-}
+  }
+
 </script>
 
 <style>
@@ -57,6 +58,21 @@ export default {
   width: 30px;
   height: 22px;
   vertical-align: middle;
+  float: left;
+}
+
+.nav-drawer.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-315deg);
+  transform: translateY(20px) rotate(-315deg);
+}
+
+.nav-drawer.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.nav-drawer.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(315deg);
+  transform: translateY(-20px) rotate(315deg);
 }
 
 /* ハンバーガーアイコンをCSSだけで表現 */
@@ -122,4 +138,5 @@ export default {
   transform: translateX(0%);/* 中身を表示（右へスライド） */
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
 }
+
 </style>
