@@ -16,19 +16,22 @@
         for="nav-input"
       />
       <div id="nav-content">
-        ここに中身を入れる
+        <Menu />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Menu from "../components/Menu.vue"
+
   export default {
     name : 'Header' ,
-    props:{
-    msg: String
+    components: {
+    Menu,
     }
   }
+
 
 </script>
 

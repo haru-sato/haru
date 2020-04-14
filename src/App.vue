@@ -6,21 +6,16 @@
     <Skill />
     <Vison />
     <Footer />
-    <Menu />
   </div>
 </template>
 
 <script>
-/*import smoothScroll from 'vue-smoothscroll'*/
-/*Vue.use(smoothScroll)*/
-
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import About from './components/About.vue'
 import Skill from './components/Skill.vue'
 import Vison from './components/Vison.vue'
 import Footer from './components/Footer.vue'
-import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
@@ -30,8 +25,7 @@ export default {
     About,
     Skill,
     Vison,
-    Footer,
-    Menu
+    Footer
   }
 }
 </script>

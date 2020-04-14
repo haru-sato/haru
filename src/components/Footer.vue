@@ -1,14 +1,11 @@
 <template>
   <div id="footerSection">
+    <a
+      href="#app"
+      @click="clickSmoothScroll()"
+    >戻る</a>
     <div id="footerCopyright">
       コピーライト
-    </div>
-    <a
-      href="#"
-      @click="clickSmoothScroll()"
-    >飛ばし先</a>
-    <div id="hoge">
-      飛び先
     </div>
   </div>
 </template>
@@ -19,7 +16,7 @@ export default {
     clickSmoothScroll(){
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector('#hoge'),
+        document.querySelector('#app'),
         400,
         null,
         null,
