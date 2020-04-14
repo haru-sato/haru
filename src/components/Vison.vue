@@ -4,7 +4,11 @@
       Vison
     </div>
     <div id="visonExplain">
-      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      ディレクションや経営にも興味があります。
+      その中でまずは、ユーザの目線で考え、提案できるエンジニアになることを一つ目標としています。
+      そのため、toCの開発に関わり経験を積んで行きたく思っています。
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     </div>
   </div>
 </template>
@@ -24,8 +28,9 @@
 #visonSection {
   background: linear-gradient(180deg, #f5f5f5, #a4a6a7);
   width: 100%;
-  height: auto;
+  height: 100px;
   text-align: center;
+  padding: 20px 0;
 }
 
 #visonTitle {
@@ -34,6 +39,7 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 18pt;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+  margin-top: 0%;
 }
 
 #visonExplain {
@@ -41,9 +47,9 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
+  margin-top: 0;
   word-break: break-all;
-  line-height: 0.25em;
-  margin-top: 20px;
+  line-height: 1.2;
 }
 
 </style>
