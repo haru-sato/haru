@@ -15,7 +15,9 @@
         class="nav-unshown"
         for="nav-input"
       />
-      <div id="nav-content" />
+      <div id="nav-content">
+        ここに中身を入れる
+      </div>
     </div>
   </div>
 </template>
@@ -31,6 +33,7 @@
 </script>
 
 <style>
+
 #headerSection {
   background: #f3f3f3;
   width: 100%;
