@@ -19,16 +19,22 @@
       スキル
     </div>
     <div id="skillGraph">
-      グラフ
+      <FrontChart /><BackChart /><DevOpsChart />
     </div>
   </div>
 </template>
 
 <script>
+  import FrontChart from './FrontChart.vue';
+  import BackChart from './BackChart.vue';
+  import DevOpsChart from './DevOpsChart.vue';
+
   export default {
     name : 'Skill' ,
-    props:{
-    msg: String
+    components: {
+    FrontChart,
+    BackChart,
+    DevOpsChart
     }
   }
 </script>
