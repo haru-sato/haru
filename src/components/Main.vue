@@ -31,6 +31,9 @@
   height: auto;
   padding-bottom: 30px;
   text-align: center;
+  margin-top: 60px;
+  min-height: 200px;
+  border-bottom: solid 1px #cbcbcb;
 }
 
 #userName,
@@ -49,9 +52,4 @@
   height: 64px;
 }
 
-div#mainSection {
-  margin-top: 60px;
-  min-height: 200px;
-  border-bottom: solid 1px #cbcbcb;
-}
 </style>

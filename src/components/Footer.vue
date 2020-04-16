@@ -3,9 +3,13 @@
     <a
       href="#app"
       @click="clickSmoothScroll()"
-    >戻る</a>
+    >
+      <img
+        id="footerScroll"
+        src="../assets/scrollButton.png"
+      ></a>
     <div id="footerCopyright">
-      コピーライト
+      ©Seattleconsulting
     </div>
   </div>
 </template>
@@ -16,7 +20,7 @@ export default {
     clickSmoothScroll(){
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector('#app'),
+        document.querySelector('app'),
         400,
         null,
         null,

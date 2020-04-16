@@ -1,9 +1,9 @@
 <template>
-  <div id="visonSection">
-    <div id="visonTitle">
+  <div id="visionSection">
+    <div id="visionTitle">
       Vison
     </div>
-    <div id="visonExplain">
+    <div id="visionExplain">
       ディレクションや経営にも興味があります。
       その中でまずは、ユーザの目線で考え、提案できるエンジニアになることを一つ目標としています。
       そのため、toCの開発に関わり経験を積んで行きたく思っています。
@@ -15,7 +15,7 @@
 
 <script>
   export default {
-    name : 'Vison' ,
+    name : 'Vision' ,
     props:{
     msg: String
     }
@@ -25,7 +25,7 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
-#visonSection {
+#visionSection {
   background: linear-gradient(180deg, #f5f5f5, #a4a6a7);
   width: 100%;
   height: 100px;
@@ -33,7 +33,7 @@
   padding: 20px 0;
 }
 
-#visonTitle {
+#visionTitle {
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
@@ -42,7 +42,7 @@
   margin-top: 0%;
 }
 
-#visonExplain {
+#visionExplain {
   color: #707070;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
