@@ -49,4 +49,9 @@ export default {
     font-size: 12pt;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
   }
+
+  #footerScroll {
+    width: 50px;
+    height: 50px;
+  }
 </style>

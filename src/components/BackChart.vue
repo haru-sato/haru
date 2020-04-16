@@ -11,7 +11,7 @@ export default {
         datasets: [
           {
             label: 'Bar Dataset',
-            data: [30, 40, 10, 10, 30],
+            data: [20, 20, 10, 10, 30],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',
@@ -33,7 +33,7 @@ export default {
         ]
       },
       options: {
-        scales: {
+        scale: {
             ticks: {
               beginAtZero: true,
               max :50,

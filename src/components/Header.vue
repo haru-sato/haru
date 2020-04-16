@@ -1,24 +1,18 @@
 <template>
   <div id="headerSection">
-    <div id="nav-drawer">
-      <input
-        id="nav-input"
-        type="checkbox"
-        class="nav-unshown"
-      >
-      <label
-        id="nav-open"
-        for="nav-input"
-      ><span /></label>
-      <label
-        id="nav-close"
-        class="nav-unshown"
-        for="nav-input"
-      />
-      <div id="nav-content">
-        <Menu />
-      </div>
-    </div>
+    <button
+      type="button"
+      class="btn_menu"
+      :class="{'active': isActive}"
+      @click="menu"
+    >
+      <span class="bar bar1" />
+      <span class="bar bar2" />
+      <span class="bar bar3" />
+    </button>
+    <nav :class="{'open':isActive}">
+      <Menu @sample="menuClose" />
+    </nav>
   </div>
 </template>
 
@@ -28,9 +22,23 @@
   export default {
     name : 'Header' ,
     components: {
-    Menu,
+    Menu
+    },
+    data(){
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    menu(){
+      this.isActive=!this.isActive
+    },
+    menuClose(){
+      this.isActive=false
+      this.$emit('closemenu')
     }
   }
+}
 
 
 </script>
@@ -46,100 +54,72 @@
   top: 0;
 }
 
-#nav-drawer {
-  position: relative;
-}
-
-/* チェックボックス等は非表示に */
-.nav-unshown {
-  display: none;
-}
-
-/* アイコンのスペース */
-#nav-open {
-  display: inline-block;
-  width: 30px;
-  height: 22px;
-  vertical-align: middle;
-  float: left;
-}
-
-.nav-drawer.active span:nth-of-type(1) {
-  -webkit-transform: translateY(20px) rotate(-315deg);
-  transform: translateY(20px) rotate(-315deg);
-}
-
-.nav-drawer.active span:nth-of-type(2) {
-  opacity: 0;
-}
-
-.nav-drawer.active span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(315deg);
-  transform: translateY(-20px) rotate(315deg);
-}
-
-/* ハンバーガーアイコンをCSSだけで表現 */
-#nav-open span,
-#nav-open span::before,
-#nav-open span::after {
-  position: absolute;
-  height: 3px;/* 線の太さ */
-  width: 25px;/* 長さ */
-  border-radius: 3px;
-  background: #555;
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-
-#nav-open span::before {
-  bottom: -8px;
-}
-
-#nav-open span::after {
-  bottom: -16px;
-}
-
-/* 閉じる用の薄黒カバー */
-#nav-close {
-  display: none;/* はじめは隠しておく */
-  position: fixed;
-  z-index: 99;
-  top: 0;/* 全体に広がるように */
-  left: 0;
+nav {
+  max-width: 768px;
   width: 100%;
   height: 100%;
-  background: black;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-/* 中身 */
-#nav-content {
-  overflow: auto;
+  transition: all 0.2s;
+  transform: translate(-100%);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;/* 最前面に */
-  width: 90%;/* 右側に隙間を作る（閉じるカバーを表示） */
-  max-width: 330px;/* 最大幅（調整してください） */
-  height: 100%;
-  background: #fff;/* 背景色 */
-  transition: 0.3s ease-in-out;/* 滑らかに表示 */
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);/* 左に隠しておく */
+  z-index: 1001;
+  background-color: #fff;
 }
 
-/* チェックが入ったらもろもろ表示 */
-#nav-input:checked ~ #nav-close {
-  display: block;/* カバーを表示 */
-  opacity: 0.5;
+nav.open {
+  transform: translateX(0);
+  position: fixed;
+  z-index: 10;
 }
 
-#nav-input:checked ~ #nav-content {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);/* 中身を表示（右へスライド） */
-  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+/* ボタンタグ設定 */
+button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 30px;
+  color: #333;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+
+/* ハンバーガーボタン3本線 */
+button span.bar {
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+  transition: all 0.2s;
+  transform-origin: 0 0;
+}
+
+/* メニューアクティブ時 */
+button.active span.bar {
+  width: 49px;
+}
+
+button.active .bar1 {
+  transform: rotate(40deg);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1001;
+}
+
+button.active .bar2 {
+  opacity: 0;
+}
+
+button.active .bar3 {
+  transform: rotate(-40deg);
+  position: fixed;
+  right: 0;
+  z-index: 1001;
 }
 
 </style>

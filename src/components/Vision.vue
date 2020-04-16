@@ -4,11 +4,9 @@
       Vison
     </div>
     <div id="visionExplain">
-      ディレクションや経営にも興味があります。
-      その中でまずは、ユーザの目線で考え、提案できるエンジニアになることを一つ目標としています。
-      そのため、toCの開発に関わり経験を積んで行きたく思っています。
-      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      将来はディレクションや経営にも興味があります。
+      その中でまずは、ユーザの目線で考え、提案もできるエンジニアになることを一つ目標としています。
+      そのため、toCの開発を中心に様々な案件に携わり経験を積んで行きたく思っています。
     </div>
   </div>
 </template>

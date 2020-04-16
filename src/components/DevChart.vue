@@ -33,7 +33,7 @@ export default {
         ]
       },
       options: {
-        scales: {
+        scale: {
             ticks: {
               beginAtZero: true,
               max :50,
