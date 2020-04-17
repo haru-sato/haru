@@ -1,7 +1,8 @@
 <template>
   <div id="footerSection">
     <a
-      href="#app"
+      href="#"
+      class="footer-icon"
       @click="clickSmoothScroll()"
     >
       <img
@@ -43,11 +44,13 @@ export default {
   }
 
   #footerCopyright {
+    background: linear-gradient(180deg, #80e1f7, #06c1e6);
     color: #fff;
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     font-size: 12pt;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+    height: 40px;
   }
 
   #footerScroll {
