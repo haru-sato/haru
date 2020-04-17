@@ -14,12 +14,12 @@
 </template>
 
 <script>
-export default {
+  export default {
     name : 'Main' ,
     props:{
-        msg: String
+    msg: String
     }
-}
+  }
 </script>
 
 <style scoped>
@@ -31,6 +31,9 @@ export default {
   height: auto;
   padding-bottom: 30px;
   text-align: center;
+  margin-top: 60px;
+  min-height: 200px;
+  border-bottom: solid 1px #cbcbcb;
 }
 
 #userName,
@@ -45,14 +48,8 @@ export default {
 
 #profilePicture {
   border-radius: 50%;
-  width: 64px;
-  height: 64px;
-}
-
-div#mainSection {
-  margin-top: 60px;
-  min-height: 200px;
-  border-bottom: solid 1px #cbcbcb;
+  width: 128px;
+  height: 128px;
 }
 
 </style>
