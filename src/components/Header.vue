@@ -11,7 +11,7 @@
       <span class="bar bar3" />
     </button>
     <nav :class="{'open':isActive}">
-      <Menu @sample="closeMenu" />
+      <Menu @clpseMenu="closeMenu" />
     </nav>
   </div>
 </template>
