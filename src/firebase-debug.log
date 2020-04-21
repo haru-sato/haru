@@ -1,0 +1,50 @@
+[debug] [2020-04-21T08:06:16.568Z] ----------------------------------------------------------------------
+[debug] [2020-04-21T08:06:16.570Z] Command:       /Users/haru/.nodebrew/node/v8.13.0/bin/node /Users/haru/.nodebrew/current/bin/firebase deploy
+[debug] [2020-04-21T08:06:16.570Z] CLI Version:   8.1.1
+[debug] [2020-04-21T08:06:16.570Z] Platform:      darwin
+[debug] [2020-04-21T08:06:16.570Z] Node Version:  v8.13.0
+[debug] [2020-04-21T08:06:16.572Z] Time:          Tue Apr 21 2020 17:06:16 GMT+0900 (JST)
+[debug] [2020-04-21T08:06:16.572Z] ----------------------------------------------------------------------
+[debug] [2020-04-21T08:06:16.572Z] 
+[debug] [2020-04-21T08:06:16.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-21T08:06:16.588Z] > authorizing via signed-in user
+[debug] [2020-04-21T08:06:16.589Z] [iam] checking project haru-sato for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-04-21T08:06:16.591Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-21T08:06:16.591Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-21T08:06:16.635Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-04-21T08:06:16.636Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-21T08:06:16.636Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-21T08:06:16.639Z] [functions] service account IAM check errored, deploy may fail:Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci {"name":"FirebaseError","children":[],"exit":1,"message":"Authentication Error: Your credentials are no longer valid. Please run \u001b[1mfirebase login --reauth\u001b[22m\n\nFor CI servers and headless environments, generate a new token with \u001b[1mfirebase login:ci\u001b[22m","status":500}
+[debug] [2020-04-21T08:06:16.639Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-21T08:06:16.640Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-21T08:06:16.641Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-04-21T08:06:16.965Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (/Users/haru/.nodebrew/node/v8.13.0/lib/node_modules/firebase-tools/lib/auth.js:23:32)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/haru/.nodebrew/node/v8.13.0/lib/node_modules/firebase-tools/lib/commands/login.js:8:12)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+[error] 
+[error] Error: Failed to get Firebase project haru-sato. Please make sure the project exists and your account has permission to access it.
