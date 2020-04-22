@@ -1,12 +1,15 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from "vue"
+import Vuex from "vuex"
 import axios from "axios"
 Vue.use(Vuex);
 export default new Vuex.Store({
+//stateオプションで初期値を設定
+// stateはdataのオブジェクト版？？
   state:{
     skills:[],
     loaded: false
   },
+  // stateはここでしか変更できない
   mutations: {
     setSkills:function(state,skills){
      state.skills = skills
@@ -22,10 +25,17 @@ export default new Vuex.Store({
       }
     },
   getters: {
+     // =>:アロー関数 Vueでアロー関数を使う時はthisの挙動が違うから注意
+     // アロー関数は関数定義 function(){};を()=>{}と書ける
+     // https://vuex.vuejs.org/ja/guide/getters.html
     skillName:(state) => (index) => {
       const skillNameArray = []
       if(state.skills[index]) {
+        // forEachの中のSkillはpushのSkillと一緒やったらなんでもよい
+        /* eslint-disable no-debugger */
+        // debugger
         state.skills[index].skill.forEach((Skill) => {
+        // skillNameArrayの空の場所にnameをpush
           skillNameArray.push(Skill.name)
         })
       }
