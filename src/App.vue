@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Main />
-    <div>{{ this.skills }}</div>
+    <div>{this.skills}</div>
     <About />
     <Skill />
     <Vision />
@@ -17,6 +17,8 @@
   import Skill from './components/Skill.vue'
   import Vision from './components/Vision.vue'
   import Footer from './components/Footer.vue'
+  import {mapGetters,mapActions} from 'vuex'
+
 export default {
   name: 'App',
     components: {
@@ -27,35 +29,35 @@ export default {
       Vision,
       Footer
   },
-    data() {
+    data: function() {
       return {
-      skills: []
-      }
+      skills: [],
+      category: 'front-end',
+      };
     },
-  mounted () {
-    this.getSkills();
+  computed: {
+    ...mapGetters({
+      get: 'getSkills',
+    }),
   },
+
+  created(){
+    this.updateSkillCategories();
+  },
+
   methods: {
-    getSkills() {
+    ...mapActions(['updateSkillCategories']),
+
+    getSkill() {
       // dataのスキルを初期化する
-      this.skills = [];
-      // this.skillsを一時変数のitemsに参照コピーする
-      let items = this.skills;
-      // axios.getを用いてデプロイ済のfunctionにアクセスする
-      this.axios.get('https://us-central1-haru-sato.cloudfunctions.net/skills')
-        .then((response) => {
-          response.data.forEach(function(skill) {
-            // 取得したデータを１件ずつ配列に設定する
-            items.push(skill);
-          })
-        })
-        .catch((e) => {
-          alert(e);
-        });
-      console.log(items)
-    }
-  }
-}
+      this.get(this.category);
+    },
+    async test() {
+      return await this.updateSkillCategories();
+    },
+  },
+};
+
 </script>
 
 <style>
