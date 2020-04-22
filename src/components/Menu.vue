@@ -53,7 +53,7 @@
         400,
         'y'
       );
-      this.$emit('sample')
+      this.$emit('closeMenu')
     }
   }
   }

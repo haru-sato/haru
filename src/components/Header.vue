@@ -33,9 +33,9 @@
     menu(){
       this.isActive=!this.isActive
     },
-    menuClose(){
+    closeMenu(){
       this.isActive=false
-      this.$emit('closemenu')
+      this.$emit('closeMenu')
     }
   }
 }
