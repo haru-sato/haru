@@ -17,7 +17,7 @@
   import Skill from './components/Skill.vue'
   import Vision from './components/Vision.vue'
   import Footer from './components/Footer.vue'
-  import {mapGetters,mapActions} from 'vuex'
+  // import {mapGetters,mapActions} from 'vuex'
 
 export default {
   name: 'App',
@@ -29,33 +29,9 @@ export default {
       Vision,
       Footer
   },
-    data: function() {
-      return {
-      skills: [],
-      category: 'front-end',
-      };
-    },
-  computed: {
-    ...mapGetters({
-      get: 'getSkills',
-    }),
-  },
-
-  created(){
-    this.updateSkillCategories();
-  },
-
-  methods: {
-    ...mapActions(['updateSkillCategories']),
-
-    getSkill() {
-      // dataのスキルを初期化する
-      this.get(this.category);
-    },
-    async test() {
-      return await this.updateSkillCategories();
-    },
-  },
+     mounted () {
+       this.$store.dispatch('getSkills');
+  }
 };
 
 </script>
