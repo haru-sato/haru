@@ -11,7 +11,7 @@
       <span class="bar bar3" />
     </button>
     <nav :class="{'open':isActive}">
-      <Menu @sample="menuClose" />
+      <Menu @closeMenu="closeMenu" />
     </nav>
   </div>
 </template>
@@ -33,9 +33,9 @@
     menu(){
       this.isActive=!this.isActive
     },
-    menuClose(){
+    closeMenu(){
       this.isActive=false
-      this.$emit('closemenu')
+      this.$emit('closeMenu')
     }
   }
 }

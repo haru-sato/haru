@@ -85,7 +85,7 @@
       </ul>
     </div>
     <div id="skillGraph">
-      <div v-if="isFrontActive">
+      <div v-if="isFrontActive && loaded">
         <FrontChart />
       </div>
       <div v-if="isBackActive">
@@ -124,6 +124,9 @@
     },
     isDevActive() {
       return this.currentChart=='DevChart';
+    },
+    loaded() {
+      return this.$store.state.loaded
     }
   },
   methods: {
@@ -156,6 +159,8 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
+  width: 75%;
+  text-align: center;
   word-break: break-all;
   white-space: pre-wrap;
   line-height: 1.2;

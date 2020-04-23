@@ -1,7 +1,7 @@
 <template>
   <div id="visionSection">
     <div id="visionTitle">
-      Vison
+      Vision
     </div>
     <div id="visionExplain">
       将来はディレクションや経営にも興味があります。
