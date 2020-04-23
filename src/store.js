@@ -22,7 +22,8 @@ const store = new Vuex.Store({
     // getSkillsで引っ張ってくる
     // actionはどこか(反映させたいとこ)でディスパッチしないと動かない
     getSkills: function({commit}){
-      return axios.get('https://us-central1-haru-sato.cloudfunctions.net/skills')
+      const functionsUrl = 'https://us-central1-' + process.env.VUE_APP_FUNCTIONS_API + '.cloudfunctions.net/skills';
+      return axios.get(functionsUrl)
         .then(response => {
           commit('setSkills',response.data)
         })
