@@ -1,5 +1,21 @@
 {
   "projects": {
     "default": "haru-sato"
+  },
+  "targets": {
+    "haru-sato": {
+      "hosting": {
+        "portfolio": [
+          "haru-sato"
+        ]
+      }
+    },
+    "dev-portfolio-86e04": {
+      "hosting": {
+        "portfolio": [
+          "dev-portfolio-86e04"
+        ]
+      }
+    }
   }
 }
