@@ -14,9 +14,9 @@
 # masterブランチ名が異なる人は変えてください(いないと思うが)
 MASTER_BRANCH='master'
 # TODO: 自分の開発用サービス名に変更する
-DEVELOPMENT_SERVER="haru-sato"
+DEVELOPMENT_SERVER="dev-portfolio-86e04"
 # TODO: 自分の本番公開用サービス名に変更する
-PRODUCTION_SERVER="dev-portfolio-86e04"
+PRODUCTION_SERVER="haru-sato"
 
 # $1:execute status
 # $2:error message
