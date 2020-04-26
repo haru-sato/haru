@@ -35,13 +35,15 @@
 }
 
 #aboutTitle {
-  color: #20879f;
+  background: #040c1b;
+  color: white;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 18pt;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
   white-space: pre-wrap;
-  margin-top: 0;
+  margin-top: 30px;
+  width: 40%;
 }
 
 #aboutExplain {

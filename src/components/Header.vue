@@ -102,7 +102,7 @@ button span.bar {
   box-sizing: border-box;
   width: 100%;
   height: 4px;
-  background-color: #333;
+  background-color: white;
   border-radius: 4px;
 }
 
@@ -123,6 +123,7 @@ button span.bar::after {
 /* メニューアクティブ時 */
 button.active span.bar {
   width: 30px;
+  background-color: black;
 }
 
 button.active .bar1 {
@@ -151,8 +152,8 @@ button.active .bar2 {
 }
 
 button.active .bar3 {
-  -webkit-transform: translateY(-13px) rotate(45deg);
-  transform: translateY(-13px) rotate(45deg);
+  -webkit-transform: translateY(-15px) rotate(45deg);
+  transform: translateY(-15px) rotate(45deg);
   z-index: 1001;
 }
 

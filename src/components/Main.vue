@@ -26,7 +26,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #mainSection {
-  background: linear-gradient(180deg, #80e1f7, #06c1e6);
+  background: linear-gradient(180deg, #151a61, #040c1b);
   width: 100%;
   height: auto;
   padding-bottom: 30px;

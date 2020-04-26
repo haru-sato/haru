@@ -77,7 +77,7 @@
         id="btn-Dev"
         :class="{'Devchange': isDevActive}"
       >
-        <li>Lenux</li>
+        <li>Linux</li>
         <li>Node</li>
         <li>Git</li>
         <li>GitHub</li>
@@ -216,6 +216,10 @@ li {
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
   text-align: center;
+  border: none;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  outline: none;
 }
 
 .Frontchange li {
@@ -240,22 +244,6 @@ li {
 
 #btn-Dev li {
   color: #571083;
-}
-
-button #Front,
-#Back,
-#Dev {
-  display: block;
-  background: none;
-  border: none;
-  padding: 0;
-  width: 30px;
-  color: #333;
-  font-size: 8px;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  text-align: left;
-  outline: none;
 }
 
 #skillGraph {
