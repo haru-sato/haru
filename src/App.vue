@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Main />
-    <div>{this.skills}</div>
+    <!-- <div>{this.skills}</div> -->
     <About />
     <Skill />
     <Vision />
@@ -38,6 +38,11 @@ export default {
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
+
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+  }
 
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

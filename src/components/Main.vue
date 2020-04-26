@@ -31,7 +31,7 @@
   height: auto;
   padding-bottom: 30px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: -60px;
   min-height: 200px;
   border-bottom: solid 1px #cbcbcb;
 }

@@ -4,7 +4,7 @@
       Vision
     </div>
     <div id="visionExplain">
-      将来はディレクションや経営にも興味があります。
+      将来的にはディレクションや経営に関わっていきたいと考えています。
       その中でまずは、ユーザの目線で考え、提案もできるエンジニアになることを一つ目標としています。
       そのため、toCの開発を中心に様々な案件に携わり経験を積んで行きたく思っています。
     </div>
@@ -45,9 +45,11 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
-  margin-top: 0;
   word-break: break-all;
   line-height: 1.2;
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 </style>

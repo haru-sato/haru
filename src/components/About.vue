@@ -40,6 +40,7 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 18pt;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+  white-space: pre-wrap;
   margin-top: 0;
 }
 
@@ -48,13 +49,13 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
+  width: 75%;
+  text-align: left;
   height: 20px;
   word-break: break-all;
   line-height: 1.2;
   margin: auto;
   margin-top: 20px;
-  width: 75%;
-  text-align: left;
   white-space: pre-wrap;
 }
 

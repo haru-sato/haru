@@ -9,7 +9,7 @@
       今後はWebアプリケーションのバックエンドの開発業務に積極的に携わらせていただき、
       少しずつ専門性を高めていきたいと考えています。
     </div>
-    <label for="gitHubLabel">GitHub</label>
+    <label for="gitHubLabel">GitHub ：</label>
     <a
       id="gitHubLink"
       href="https://github.com/haru-sato/portfolio"
@@ -102,7 +102,6 @@
   import FrontChart from './FrontChart.vue';
   import BackChart from './BackChart.vue';
   import DevChart from './DevChart.vue';
-
   export default {
     name : 'Skill' ,
     components: {
@@ -160,10 +159,11 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
   width: 75%;
-  text-align: center;
+  text-align: left;
   word-break: break-all;
   white-space: pre-wrap;
   line-height: 1.2;
+  margin: 0 auto;
 }
 
 #gitHubLabel {
@@ -240,6 +240,22 @@ li {
 
 #btn-Dev li {
   color: #571083;
+}
+
+button #Front,
+#Back,
+#Dev {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 30px;
+  color: #333;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
 }
 
 #skillGraph {

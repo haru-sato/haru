@@ -97,7 +97,6 @@
 }
 
 #drawerButton {
-  background-color: #f3f3f3;
   width: 100%;
   max-width: 768px;
   height: 60px;

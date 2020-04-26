@@ -1,5 +1,7 @@
 <template>
   <div id="headerSection">
+    <!-- <div class = "iconMenu" style = "transform-origin 0px 0px 0px;
+    transform: matrix(1,0,0,1,0,0);"> -->
     <button
       type="button"
       class="btn_menu"
@@ -46,7 +48,7 @@
 <style>
 
 #headerSection {
-  background: #f3f3f3;
+  background: none;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -56,8 +58,8 @@
 
 nav {
   max-width: 768px;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   transition: all 0.2s;
   transform: translate(-100%);
   position: fixed;
@@ -88,38 +90,122 @@ button {
   outline: none;
 }
 
+button .bar {
+  display: inline-blockblock;
+  position: relative;
+}
+
 /* ハンバーガーボタン3本線 */
 button span.bar {
-  display: block;
-  height: 2px;
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
   background-color: #333;
-  margin: 10px 0;
-  transition: all 0.2s;
-  transform-origin: 0 0;
+  border-radius: 4px;
+}
+
+button span.bar::after {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  margin: -26px 0 0 -38px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  transition: all 0.4s;
 }
 
 /* メニューアクティブ時 */
 button.active span.bar {
-  width: 49px;
+  width: 30px;
 }
 
 button.active .bar1 {
-  transform: rotate(40deg);
-  position: fixed;
-  right: 0;
-  top: 0;
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
   z-index: 1001;
 }
 
 button.active .bar2 {
+  left: 60%;
   opacity: 0;
+  -webkit-animation: active-menu-bar02 0.8s forwards;
+  animation: active-menu-bar02 0.8s forwards;
+}
+
+@-webkit-keyframes active-menu-bar02 {
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes active-menu-bar02 {
+  100% {
+    height: 0;
+  }
 }
 
 button.active .bar3 {
-  transform: rotate(-40deg);
-  position: fixed;
-  right: 0;
+  -webkit-transform: translateY(-13px) rotate(45deg);
+  transform: translateY(-13px) rotate(45deg);
   z-index: 1001;
 }
 
+button.active span.bar::after {
+  -webkit-animation: circle 0.4s 0.4s forwards;
+  animation: circle 0.4s 0.25s forwards;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    border-color: transparent;
+    -webkit-transform: rotate(0);
+  }
+
+  25% {
+    border-color: transparent black transparent transparent;
+  }
+
+  50% {
+    border-color: transparent black black transparent;
+  }
+
+  75% {
+    border-color: transparent black black black;
+  }
+
+  100% {
+    border-color: black;
+    -webkit-transform: rotate(-680deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    border-color: transparent;
+    transform: rotate(0);
+  }
+
+  25% {
+    border-color: transparent black transparent transparent;
+  }
+
+  50% {
+    border-color: transparent black black transparent;
+  }
+
+  75% {
+    border-color: transparent black black black;
+  }
+
+  100% {
+    border-color: black;
+    transform: rotate(-680deg);
+  }
+}
 </style>
