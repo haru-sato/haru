@@ -137,7 +137,6 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #skillSection {
   width: 100%;
