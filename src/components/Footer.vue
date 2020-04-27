@@ -36,12 +36,13 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
   #footerSection {
-    background: linear-gradient(180deg, #80e1f7, #06c1e6);
+    background: linear-gradient(180deg, #151a61, #040c1b);
     color: white;
     width: 100%;
     height: auto;
     padding-bottom: 30px;
     text-align: center;
+    margin-top: 30px;
   }
 
   #footerCopyright {
@@ -56,8 +57,8 @@ export default {
 
   #footerScroll {
     position: relative;
-    top: -10px;
-    width: 50px;
-    height: 50px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
   }
 </style>

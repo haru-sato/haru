@@ -151,6 +151,7 @@
   font-size: 18pt;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
   white-space: pre-wrap;
+  margin-top: 30px;
 }
 
 #skillExplain {
@@ -164,6 +165,7 @@
   white-space: pre-wrap;
   line-height: 1.2;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 #gitHubLabel {

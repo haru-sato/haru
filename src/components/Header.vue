@@ -48,7 +48,7 @@
 <style>
 
 #headerSection {
-  background: none;
+  background-color: #151a61;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -66,7 +66,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1001;
-  background-color: #fff;
+  background-color: #151a61;
 }
 
 nav.open {
@@ -82,7 +82,7 @@ button {
   border: none;
   padding: 0;
   width: 30px;
-  color: #333;
+  color: white;
   font-size: 8px;
   letter-spacing: 0.1em;
   cursor: pointer;
@@ -123,7 +123,7 @@ button span.bar::after {
 /* メニューアクティブ時 */
 button.active span.bar {
   width: 30px;
-  background-color: black;
+  background-color: white;
 }
 
 button.active .bar1 {
@@ -169,19 +169,19 @@ button.active span.bar::after {
   }
 
   25% {
-    border-color: transparent black transparent transparent;
+    border-color: transparent white transparent transparent;
   }
 
   50% {
-    border-color: transparent black black transparent;
+    border-color: transparent white white transparent;
   }
 
   75% {
-    border-color: transparent black black black;
+    border-color: transparent white white white;
   }
 
   100% {
-    border-color: black;
+    border-color: white;
     -webkit-transform: rotate(-680deg);
   }
 }
@@ -193,19 +193,19 @@ button.active span.bar::after {
   }
 
   25% {
-    border-color: transparent black transparent transparent;
+    border-color: transparent white transparent transparent;
   }
 
   50% {
-    border-color: transparent black black transparent;
+    border-color: transparent white white transparent;
   }
 
   75% {
-    border-color: transparent black black black;
+    border-color: transparent white white white;
   }
 
   100% {
-    border-color: black;
+    border-color: white;
     transform: rotate(-680deg);
   }
 }

@@ -24,20 +24,24 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #visionSection {
-  background: linear-gradient(180deg, #f5f5f5, #a4a6a7);
+  background: linear-gradient(180deg, #f5f5f5, #cbcbcb);
   width: 100%;
-  height: 100px;
-  text-align: center;
-  padding: 20px 0;
+  height: auto;
+  margin-top: 0;
+  min-height: 150px;
+  white-space: pre-wrap;
 }
 
 #visionTitle {
-  color: #20879f;
+  color: #040c1b;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 18pt;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
-  margin-top: 0%;
+  white-space: pre-wrap;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 #visionExplain {
@@ -45,11 +49,14 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
+  width: 75%;
+  text-align: left;
+  height: 20px;
   word-break: break-all;
   line-height: 1.2;
-  width: 75%;
   margin: 0 auto;
-  text-align: left;
+  margin-top: 20px;
+  white-space: pre-wrap;
 }
 
 </style>
