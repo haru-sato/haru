@@ -9,7 +9,10 @@
         id="footerScroll"
         src="../assets/scrollButton.png"
       ></a>
-    <div id="footerCopyright">
+    <div
+      id="footerCopyright"
+      class="whiteText"
+    >
       ©Seattleconsulting
     </div>
   </div>
@@ -33,28 +36,26 @@ export default {
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
-  #fotterSection {
-    background: linear-gradient(180deg, #80e1f7, #06c1e6);
+  #footerSection {
+    background: linear-gradient(180deg, #151a61, #040c1b);
+    color: white;
     width: 100%;
     height: auto;
     padding-bottom: 30px;
     text-align: center;
+    margin-top: 30px;
   }
 
   #footerCopyright {
-    background: linear-gradient(180deg, #80e1f7, #06c1e6);
-    color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
     font-size: 12pt;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
     height: 40px;
   }
 
   #footerScroll {
-    width: 50px;
-    height: 50px;
+    position: relative;
+    top: 3px;
+    width: 30px;
+    height: 30px;
   }
 </style>

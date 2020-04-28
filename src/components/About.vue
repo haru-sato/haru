@@ -1,9 +1,18 @@
 <template>
-  <div id="aboutSection">
-    <div id="aboutTitle">
+  <div
+    id="aboutSection"
+    class="section"
+  >
+    <div
+      id="aboutTitle"
+      class="title"
+    >
       About Me
     </div>
-    <div id="aboutExplain">
+    <div
+      id="aboutExplain"
+      class="explain"
+    >
       福岡市出身。同志社大学卒。専攻は数学。ITの力で新しいものを生み出し、
       様々な価値を提供できる人になりたいと思い、IT業界を志望しました。
       また、学生時代は弊社の大阪支社にてインターン生として
@@ -22,39 +31,13 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #aboutSection {
-  background: #f5f5f5;
+  background: linear-gradient(180deg, #f5f5f5, #cbcbcb);
   width: 100%;
   height: auto;
   margin-top: 0;
   min-height: 150px;
-  border-bottom: solid 1px #cbcbcb;
-  white-space: pre-wrap;
-}
-
-#aboutTitle {
-  color: #20879f;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 18pt;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
-  margin-top: 0;
-}
-
-#aboutExplain {
-  color: #707070;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 12pt;
-  height: 20px;
-  word-break: break-all;
-  line-height: 1.2;
-  margin: auto;
-  margin-top: 20px;
-  width: 75%;
-  text-align: left;
   white-space: pre-wrap;
 }
 
