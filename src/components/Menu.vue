@@ -60,7 +60,6 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #drawerSection {
   background: #f3f3f3;
@@ -97,7 +96,6 @@
 }
 
 #drawerButton {
-  background-color: #f3f3f3;
   width: 100%;
   max-width: 768px;
   height: 60px;

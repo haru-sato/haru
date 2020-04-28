@@ -9,7 +9,7 @@
       今後はWebアプリケーションのバックエンドの開発業務に積極的に携わらせていただき、
       少しずつ専門性を高めていきたいと考えています。
     </div>
-    <label for="gitHubLabel">GitHub</label>
+    <label for="gitHubLabel">GitHub ：</label>
     <a
       id="gitHubLink"
       href="https://github.com/haru-sato/portfolio"
@@ -77,7 +77,7 @@
         id="btn-Dev"
         :class="{'Devchange': isDevActive}"
       >
-        <li>Lenux</li>
+        <li>Linux</li>
         <li>Node</li>
         <li>Git</li>
         <li>GitHub</li>
@@ -102,7 +102,6 @@
   import FrontChart from './FrontChart.vue';
   import BackChart from './BackChart.vue';
   import DevChart from './DevChart.vue';
-
   export default {
     name : 'Skill' ,
     components: {
@@ -138,7 +137,6 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #skillSection {
   width: 100%;
@@ -152,6 +150,7 @@
   font-size: 18pt;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
   white-space: pre-wrap;
+  margin-top: 30px;
 }
 
 #skillExplain {
@@ -160,10 +159,12 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 12pt;
   width: 75%;
-  text-align: center;
+  text-align: left;
   word-break: break-all;
   white-space: pre-wrap;
   line-height: 1.2;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 #gitHubLabel {
@@ -216,6 +217,10 @@ li {
   font-weight: bold;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
   text-align: center;
+  border: none;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  outline: none;
 }
 
 .Frontchange li {

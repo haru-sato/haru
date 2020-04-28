@@ -1,9 +1,15 @@
 <template>
   <div id="mainSection">
-    <div id="userName">
+    <div
+      id="userName"
+      class="whiteText"
+    >
       Haru Sato
     </div>
-    <div id="companyName">
+    <div
+      id="companyName"
+      class="whiteText"
+    >
       Seattle Consulting
     </div>
     <img
@@ -23,27 +29,20 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP&display=swap');
 
 #mainSection {
-  background: linear-gradient(180deg, #80e1f7, #06c1e6);
+  background: linear-gradient(180deg, #151a61, #040c1b);
   width: 100%;
   height: auto;
   padding-bottom: 30px;
-  text-align: center;
-  margin-top: 60px;
+  margin-top: -5px;
   min-height: 200px;
   border-bottom: solid 1px #cbcbcb;
 }
 
 #userName,
 #companyName {
-  color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
   font-size: 18pt;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 #profilePicture {
